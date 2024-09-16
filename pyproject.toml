@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rfb-cnpj"
+version = "0.1.0"
+description = ""
+authors = ["F.D.Castel <fdcastel@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.66.5"
+httpx = "^0.27.2"
+duckdb = "^1.1.0"
+dbt-core = "^1.8.6"
+dbt-duckdb = "^1.8.3"
+
+[tool.poetry.scripts]
+build = "rfb_cnpj.build:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
